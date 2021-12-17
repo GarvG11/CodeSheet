@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Java CheatSheet</title>
+   <link rel="stylesheet" href="../css/java.css" />
+    <link rel="stylesheet" href="../prism/prism.css" />
+    <script src="../prism/prism.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+   <nav>
+      <div class="nav-content">Java CheatSheet</div>
+    </nav>
+
+    <div class="container">
+      <ol>
+       <li> Java Code Basic Boilerplate with Scanner class
+          <pre class="language-Java"><code>
+import java.util.Scanner;  
+class test{
+      public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+
+      }
+}
+         </code></pre>
+        </li>
+        <li> Java If-Else Statement
+            <pre class="language-java">
+               <code>
+if(/*code to be executed*/)
+   //code to be executed
+else
+   //code to be executed
+               </code>
+            </pre>
+        </li>
+        <li> Java If-Else If Statement
+           <pre class="language-Java">
+            <code>
+if(/*code to be executed*/)
+   // code to be executed
+else if(/*code to be executed*/)
+   // code to be executed
+            </code>
+           </pre>
+        </li>
+        <li> Java ForLoop Statement
+         <pre class="language-Java">
+            <code>
+for(/*code to be executed*/){
+   // code to be executed
+}               
+            </code>
+         </pre>
+        </li>
+
+        <li>WAP to print the sum of 2 numbers
+           <pre class="language-java">
+              <code>
+                 
+import java.util.Scanner;  
+class test
+{
+      public static void main(String args[])
+      {
+         Scanner sc = new Scanner(System.in);
+         int a,b,c;
+         System.out.print("Enter First Number");
+         a = sc.nextInt();
+         System.out.println("Enter second number");
+         b = sc.nextInt();
+         c = a + b;
+         System.out.println("Sum of both the numbers is " + c);
+      }
+}
+         
+              </code>
+           </pre>
+        </li>
+        <p class="note-para">
+           Quick Tip - Using the above code you can also print diferrence, product, quotient, etc. of 2 or more numbers.
+        </p>
+
+        <li>WAP to print the following series - 1, 3, 5, 7...n till n-th terms as per user input
+           <pre class="language-java">
+              <code>
+                 
+import java.util.Scanner;  
+class test
+{
+      public static void main(String args[])
+      {
+         Scanner sc = new Scanner(System.in);
+         int i, n, a;
+         a = 1
+         n = sc.nextInt();
+
+         for(i = 1;1 <= n;i++){
+            System.out.print(a  + ",");
+            a += 2;
+         }
+      }
+}
+         
+              </code>
+           </pre>
+        </li>
+
+        <li> WAP to print the the fibonacci series till N-th user input
+           <pre class = 'language-java'>
+              <code>
+import java.util.*;
+class fibonacciSeries{
+   public static void main(String args[]){ 
+      Sanner sc = new Scanner(System.in);
+      int n = sc.nextInt(); //user input
+      int a, b, c, w; // declaring all the other variables 
+      // giving values to all the variables 
+      a = 0;
+      b = 2;
+      w = 0;
+      // the while loop which will print the series
+      while(w < n){
+
+         System.out.print(a + " "); // printing the values
+         c = a + b;
+         a = b;
+         b = c;
+         w += 1;
+      }
+   }
+}
+              </code>
+           </pre>
+        </li>
+        <p class="note-para">
+           Quick Tip - You can take the while loop starter code from this piece of code...
+        </p>
+
+        <li>WAP to print the factors of a number given by user.
+           <pre class = 'language-java'>
+              <code>
+                 
+import java.util.Scanner;  
+class test
+{
+      public static void main(String args[])
+      {
+         Scanner sc = new Scanner(System.in);
+         int n = sc.nextInt();
+         int n, i;
+         n = sc.nextInt();
+         for(i=1; i<= n; i++){
+            if(n % i == 0){
+               System.out.print(i + ",");
+            }
+         }
+
+      }
+}
+         
+              </code>
+           </pre>
+        </li>
+
+        <li>WAP to print the odd numbers in a given range of numbers given by the user
+           <pre class="language-java">
+              <code>
+import java.util.Scanner;
+class test{
+   public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      int m,n,i;
+      m = sc.nextInt();
+      n = sc.nextInt();
+      for(i = m; i <= n; i++){
+         if(i % 2 != 0){
+            System.out.print(i + ",");
+         }
+      }
+   }
+}
+              </code>
+           </pre>
+        </li>
+
+        <li>WAP to print all the numbers in a given range of numbers entered by the user.
+           <pre class="language-java">
+              <code>
+
+import java.util.Scanner;  
+class test{
+      public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         int i,m,n;
+         m = sc.nextInt();
+         n = sc.nextInt();
+         for(i=m; i <= n; i++)
+      }
+}
+         
+              </code>
+           </pre>
+        </li>
+
+        <p class="note-para">
+           Now we will look at some coditional programming
+        </p>
+
+        <li>WAP to comapre 2 nos. and print the grater number or tell if they are equal.
+           <pre class="language-java">
+              <code>
+
+import java.util.Scanner;  
+class test{
+      public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         int a,b;
+         System.out.println("Enter the first no.");
+         a = sc.nextInt();
+         System.out.println("Enter the second no.");
+         b = sc.nextInt();
+         if(a == b){
+            System.out.println("Both numbers are equal.");
+         }else if(a > b){
+            Sytem.out.println(a + " is greater than " + b);
+         } else{
+            System.out.println(b  + " is greater than " + a);
+         }
+      }
+}
+                                         
+              </code>
+           </pre>
+        </li>
+
+        <li>WAP to check if an integer is even or odd
+           <pre class="language-java">
+              <code>
+
+import java.util.Scanner;  
+class test{
+      public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         int a,;
+         System.out.println("Enter first integer")
+         a  = sc.nextInt();
+         if( a % 2 == 0){
+            System.out.println("Even number");
+            else{
+               System.out.println("Odd number")
+            }
+         }
+      }
+}
+                           
+              </code>
+           </pre>
+        </li>
+
+        <li>WAP that takes an integer and tests whether it is divisible by 2, 4 & 5. Apply the divisibility rules of 2, 4 & 5.
+           <pre class="language-java">
+              <code>
+                 
+import java.util.Scanner;  
+class test{
+      public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         int a ,db2, db4, db5 ,lDg, l2Dg;
+         a = sc.nextInt();
+         b = 0;
+         lDg = a % 10;
+         l2Dg = a % 100;
+         if(lDg == 0 || lDg == 2 || lDg == 4 || lDg == 6 || lDg == 8){
+            db2 = 1
+         } else{
+            db2 = 0;
+         }
+         if(l2Dg % 4 == 0){
+            db4 = 1
+         } else{
+
+         }      
+   }
+}
+         
+              </code>
+           </pre>
+        </li>
+ 
+
+<p class="note-para"> This is only till now. <br>
+   Stay Tuned For More.
+</p>
+
+  </body>
+</html>
+</body>
+</html>
